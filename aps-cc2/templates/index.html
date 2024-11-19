@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Créditos de Carbono</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Calculadora de Créditos de Carbono</h1>
+        <div class="form">
+            <form id="emissao-form">
+                <label for="energia">Consumo de Energia (kWh):</label>
+                <input type="number" id="energia" name="energia" value="0"><br>
+                <label for="gasolina">Consumo de Gasolina (litros):</label>
+                <input type="number" id="gasolina" name="gasolina" value="0"><br>
+                <label for="diesel">Consumo de Diesel (litros):</label>
+                <input type="number" id="diesel" name="diesel" value="0"><br>
+                <label for="voo">Viagens (km):</label>
+                <input type="number" id="voo" name="voo" value="0"><br>
+                <button type="submit">Calcular Emissões</button>
+            </form>
+        </div>
+        <div id="resultado"></div>
+        <h2>Escolha um projeto para compensar suas emissões:</h2>
+        <select id="projeto">
+            <option value="reflorestamento">Reflorestamento</option>
+            <option value="energia_solar">Energia Solar</option>
+            <option value="eolico">Eólico</option>
+        </select>
+        <button id="calcular-custo">Calcular Custo</button>
+        <div id="custo"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

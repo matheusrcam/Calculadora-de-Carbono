@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% da altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    background-color: #2E8B57;
+}
+
+.background {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #2E8B57;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 20px;
+}
+
+select {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3CB371;
+}
+
+#resultado, #custo {
+    margin-top: 20px;
+    font-weight: bold;
+}
